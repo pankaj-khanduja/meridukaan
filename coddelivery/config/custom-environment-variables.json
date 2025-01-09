@@ -24,7 +24,7 @@
   "cardWebhookRedirectUrl": "cardWebhookRedirectUrl",
   "orderWebhookRedirectUrl": "orderWebhookRedirectUrl",
   "orderTipRedirectUrl": "orderTipRedirectUrl",
-  "port": "coddelivery_port",
+  "port": "8080",
   "apiBaseURl": "apiBaseURl",
   "KeyId": "razorpayKeyId",
   "secretkey": "razorpaySecretKey",
