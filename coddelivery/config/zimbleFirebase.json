@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "daarlo-zimble",
+    "private_key_id": "0df5dcfb98eec8f49eca21ea6d856fedbbf154af",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCqaGa5KX0hyvWP\n3y/70mpLrhw2e7Ka+uhUj29AhZajn93qcx7LKOGNHq/MbASpLKWtYrmRiGcsgYZ6\n4m5faTibyZpTpJnkfYGbCDCFXIAeM+jx3V2ktK0HGqCp8OSciKl89TuUR2KV+oR6\nkVUQUFLhzkTWslVlCuahteVcpZxzieoKxqnQ0tU8VPgp2XUVS3q+h7ltSAHadUcF\npSOIew/MTMsaXoPwOtkGgOR+qzNuXiFfYZPnePjrTK+rQzqVMlbDB5YKBtElEr23\nGYhhPuJFuU38SpyFDNC2qdGhSv3u3WvcdBdJF+E/zZ54lnXI0d5Gva6NUD/FLzOr\n4BlDtZYvAgMBAAECggEAQ8cLmHkGgrLZkdRJHwV1bs18/jSb+OV0E/IK42Re4oy6\n9L2+ETsc3wbGEG4kOm9+JCTgvyA8PSj1Zpn6IWvV7qy0e7E73nQG4TVUKy777Edk\nTxLnZJPSQEGYho9ANnxqwT8+576u2Q1PtPpqFXeFR7fFjIlYyrwXuFkDNaLPQ+p/\nE3EFW6EXDGEXSSwMMGRBJs1J8IUEf4wlDgjAGEkxAuVedcCyWp8FQzXdgFP6qL3K\nuAnj6h2qWS2Xa62DqbL9fEMIirB0ZQSHREV4q1J0YhWRurMVtb6Uuu4JyssoBZmZ\nNnl+Dkdoqx3lWLFTelS7nIu5igreokqngxsy33XhUQKBgQDqTIWTsZxUpSH7EM9y\nKWYxA311T/sD66Xm8AK9o+QfRRQoe5qm53HtE2ZblSKWMve2V9WyUk+Ci9VpqDX5\nSsgZogdalkCJRrYyQ0axUSViBW/KKKgtDxoX5Q/TI3R04PntVp6/SsximgXVo355\n97KAkXYLQoKnJIZee/FekrCD8QKBgQC6MPQCC9dnSrxzunlYEggChc0FDPG5kWfc\nUZ+HbS7CkJ3BB6Hvg659UDr4u46BxnEdE6FPpt+YBXTrndEzc2RKU26GPf1bNNxr\n8E7KvVEgFAi3tCPpcc+EyWxCoazs6ruqt3tKGUxVviLNIhWAjnNK0c0+DKgQOf9V\nXSlHDptcHwKBgGmV/oRmgArtN/kKxFGwMmtYJUuetYI4ydTeyH1pxD4LRWBRA4q/\ntmmeWnxfIu0JHvS/dIAd89Li7VPmCBzGBJL4n9PE7mRux2CzTMJPzUb1KEG0PMXB\njoLCKXV+/tZFJJw+ct/F94Ff4805FqAkbf7ejpHYcUSdgyhFNqrl9EIhAoGBALlS\nZlzvClyeT8rkzUiy0dQo93LSensY1oa9m4rBSuyP4uUxwqXSrMfAJqJSlLppGUc2\ntbXBRAZdUA4BDCwo66brOjRV2SqCB+9LxjEXlHrYVgD7RU9jX4ksrxv3Lla2IUr/\ny7BqU8d4M8134m0N3IWZI69iC5nzEEkYLDC0wkBDAoGADL8tDNVl6NYspRbfLjoz\nSZYqJYv/8/FgACyI/aIHZjTfye7bAOYCRtdV0+Rieo3tJYxNcdlwuhQyhINthXXh\nOtAJGv9vHKOgeI9GXiuT9x6d7fLjjOQsD8bmQdW847BktFnEMM87x1DmoVsrauZk\ngmtYgSThNxCtkqz+UC7eyoI=\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-8a4a1@daarlo-zimble.iam.gserviceaccount.com",
+    "client_id": "104495315639060475707",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-8a4a1%40daarlo-zimble.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+}

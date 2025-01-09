@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Delete your account</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        // const config = require("config")
+        document.addEventListener("DOMContentLoaded", function() {
+
+            const form = document.getElementById("loginForm");
+            const content1 = document.getElementById("content1");
+            const content2 = document.getElementById("content2");
+
+            form.addEventListener("submit", function(event) {
+                // console.log("working", document.getElementById("url").textContent)
+                event.preventDefault(); // Prevent the default form submission
+
+                const url = document.getElementById("url").textContent;
+
+                const requestOptions = {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        mobile: document.getElementById("mobile").value,
+                        otp: parseInt(document.getElementById("password").value),
+                        type :"UL"
+                    })
+                };
+                let otp =parseInt(document.getElementById("password").value);
+                if(!otp){
+                    return null;
+                }
+                fetch(url, requestOptions)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.statusCode === 400) { 
+                            alert(data.data.message);
+                            form.reset();
+                        }
+                        else {
+                            window.open("https://daarloindia.com", "_self")
+                        }
+                    })
+                    .catch(error => {
+                        // Handle errors here
+                        console.error("Error:", error);
+                        form.reset();
+                    });
+                
+            });
+        });
+        
+        function generateOTP() {
+    // Add your OTP generation logic here
+      const url1 = document.getElementById("otpUrl").textContent;
+                const requestOptions = {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },           
+                    body: JSON.stringify({
+                        mobile: document.getElementById("mobile").value,
+                        type:"UL",
+                    })
+                };
+                fetch(url1, requestOptions)
+                    .then(response => response.json())
+                    .then(data => {
+
+                        if (data.statusCode === 400) { 
+                            alert(data.data.message);
+                            form.reset();
+                        }
+                        else {
+                            
+                        }
+                    })
+                    .catch(error => {
+                        // Handle errors here
+                        console.error("Error:", error);
+                        content1.style.display = "block";
+                        content2.style.display = "none";
+                    });
+}
+
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            --main-color: <%=primaryColor %>;
+        }
+    
+        .btnColor {
+            background-color: var(--main-color);
+            color: white;
+        }
+
+        .btnColor:hover {
+            background-color: #7777;
+            color: white;
+        }
+        .card{
+            
+            /* background-image: url("https://phoneado.s3.amazonaws.com/admin/1692788955435_background.png"); */
+             height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <span id="url" style="opacity: 0;"><%=url%></span>
+    <span id="otpUrl" style="opacity: 0;"><%=otpUrl%></span>
+
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="card bg-white">
+                        <div class="card-body p-5" id="content1">
+                            <form class="mb-3 mt-md-4" id="loginForm">
+                                <p class="mx-auto text-center"><img style="width: 150px;" src="<%=logoUrl %>" alt=""></p>
+                                <h2 class="fw-bold mb-2 text-uppercase text-center">Delete your account.</h2>
+                                <p class=" mb-5 text-center">Please authenticate with your registered phone number </p>
+                                <div class="mb-3 position-relative">
+                                    <label for="mobile" class="form-label ">Phone Number </label>
+                                    <input type="mobile" class="form-control position-relative" id="mobile" style="padding-right:100px" placeholder="Enter Number with country code " required>
+                                    <button onclick="generateOTP()" class="btn btn-success" style="font-size: 8px;
+    position: absolute;
+    top: 33px;
+    top: 38px;
+    right: 5px;"> Generate OTP</button>
+                                </div>
+                                <div class=" mb-3">
+                                    <label for="password" class="form-label ">OTP</label>
+                                    <input type="password" maxlength="4" class="form-control" id="password" placeholder="****">
+                                </div>
+                                <p  class=" mb-5 " style="font-size: 14px;font-weight: bold;"> <i class="fa fa-info-circle"></i>*Enter OTP which you received on your mobile number .</p>
+                               
+                                <div class="d-grid">
+                                    <button class="btn btn-outline-dark btnColor" type="submit">Submit</button>
+                                </div>
+                            </form>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
