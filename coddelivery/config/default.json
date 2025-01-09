@@ -4,7 +4,7 @@
   "dbMlab": "mongodb+srv://ishan:mg8UtJL9yIOMSzyn@codknox.ve7bpqp.mongodb.net/coddelivery?retryWrites=true&w=majority",
   "requiresAuth": true,
   "bcryptSalt": "$2b$10$oPd2gJERglqNiWXf3sYwIu",
-  "port": "8080",
+  "port": "45000",
   "sendGridApiKey": "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",
   "ACCOUNT_SID": "ACbf2ca22877e02d389ecb3d3c6e577469",
   "AUTH_TOKEN": "3f8b7ae045fe2ab6b3a6531288ee6823",
